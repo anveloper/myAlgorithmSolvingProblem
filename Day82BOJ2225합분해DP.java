@@ -10,7 +10,7 @@ public class Day82BOJ2225합분해DP { // 2225 합분해
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();
-		K = sc.nextInt();
+		K = sc.nextInt();  
 		dp = new Integer[N + 1][K + 1];
 
 		System.out.println(recur(N, K));
