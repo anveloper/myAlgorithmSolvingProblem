@@ -2,7 +2,7 @@ package com.ssafy.an;
 
 import java.util.Scanner;
 
-public class Day86BOJ11729타일1DP { // 11726 2xn 타일링
+public class Day86BOJ11726타일1DP { // 11726 2xn 타일링
 	static int N;
 	static Integer[] dp;
 
@@ -11,7 +11,7 @@ public class Day86BOJ11729타일1DP { // 11726 2xn 타일링
 		N = sc.nextInt();
 		dp = new Integer[N];
 		dp[0] = 1; // 2x1 칸일 때
-		dp[1] = 2;
+		if(N > 1) dp[1] = 2;
 		System.out.println(recur(N-1));
 		sc.close();
 	}
@@ -20,7 +20,7 @@ public class Day86BOJ11729타일1DP { // 11726 2xn 타일링
 		if (dp[n] == null) {			
 			dp[n] = recur(n - 1) + recur(n - 2);
 		}
-		return dp[n] % 10007;
+		return dp[n] %= 10007;
 	}
 }
 // 2x1 |
