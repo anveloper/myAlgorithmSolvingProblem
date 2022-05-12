@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class Day94BOJ거짓말서로소집합 { // 1043 거짓말 
+public class Day94BOJ1043거짓말서로소집합 { // 1043 거짓말 
 	static int N, M, T, P, ans;
 	static int[] p;
 	static List<Integer>[] prt;
