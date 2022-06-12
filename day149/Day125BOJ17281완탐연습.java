@@ -12,13 +12,14 @@ public class Day125BOJ17281완탐연습 {
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = null;
 		N = Integer.parseInt(br.readLine());
+
 		rec = new int[N][10];
 		for (int i = 0; i < N; i++) {
-			StringTokenizer st = new StringTokenizer(br.readLine());
-			for (int j = 1; j <= 9; j++) {
+			st = new StringTokenizer(br.readLine());
+			for (int j = 1; j < 10; j++)
 				rec[i][j] = Integer.parseInt(st.nextToken());
-			}
 		}
 		ans = 0;
 		visited = new boolean[10];
