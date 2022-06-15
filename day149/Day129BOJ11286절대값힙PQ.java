@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 
-public class Day129BOJ절대값힙PQ { // 11286
+public class Day129BOJ11286절대값힙PQ { // 11286
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
